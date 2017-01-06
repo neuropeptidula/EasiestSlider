@@ -1,0 +1,122 @@
+.slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px; /*choose height of slider*/
+  z-index: 1;
+}
+
+.item {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  color: #fff; /*choose color of text*/
+  font-size: 48px; /*choose font size*/
+  text-align: center; /*choose text align*/
+  padding-top: 50px /*choose text position*/
+}
+
+.carousel-tab {
+  position: relative;
+  z-index: 10;
+  list-style-type: none;
+  width: 130px;
+
+  /*position of tabs*/
+  bottom: 30px;
+  left: 49%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.carousel-tab li {
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  /*style of tabs*/
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #fff;
+  
+}
+
+.carousel-tab li.active {
+  background: #000; /*color of active tab*/
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  /*style of next/prev*/
+  font-size: 0px;
+  opacity: 0.6;
+  color: #fff;
+  width: 8%;
+  height: 200px;
+ 
+}
+
+.control img {
+  height: 50px;
+  display: block;
+}
+
+.control_prev {
+  left: 0;
+}
+
+.control_next {
+  right: 0;
+}
+
+
+/*Customizing slides*/
+
+#first-slider #item-1 {
+  background: url(http://i.imgur.com/u0BnrYt.jpg);
+}
+
+#first-slider #item-2 {
+  background: url(http://i.imgur.com/IqRcfGi.jpg);
+}
+
+#first-slider #item-3 {
+  background: url(http://i.imgur.com/WC8SR1F.jpg);
+}
+
+#second-slider #item-1 {
+  background: url(http://i.imgur.com/W0VLTnb.jpg);
+}
+
+#second-slider #item-2 {
+  background: url(http://i.imgur.com/cwP6Bmn.jpg);
+}
+
+#second-slider #item-3 {
+  background: url(http://i.imgur.com/s1bLHAo.jpg);
+}
+
+#first-slider #item-1,
+#first-slider #item-2,
+#first-slider #item-3,
+#second-slider #item-1,
+#second-slider #item-2,
+#second-slider #item-3 {
+  background-size: cover;
+  background-position: center center;
+}
