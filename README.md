@@ -55,7 +55,7 @@ How to add slider to your page?
         });
 ```
 
-6. If you have any questions or suggestions, contact me! 
-   E-mail: easiest.slider@gmail.com
+If you have any questions or suggestions, contact me! 
+E-mail: easiest.slider@gmail.com
      
 
