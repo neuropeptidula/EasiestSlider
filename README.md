@@ -57,5 +57,5 @@ How to add slider to your page?
 
 If you have any questions or suggestions, contact me! 
 E-mail: easiest.slider@gmail.com
-     
+You could see other tips from me at my Codepen account: http://codepen.io/neuropeptidula/
 
