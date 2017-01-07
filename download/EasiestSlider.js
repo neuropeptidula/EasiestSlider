@@ -85,6 +85,37 @@
             mySlider.find(".control").hide();
         }
 
+        mySlider.find('.carousel-tab').each(function() {
+            var $a = $(this).find('li');
+            $a.on('click', function(e) {
+
+                if (settings.dots == true) {
+
+                    mySlider.find('.carousel .item.active').hide();
+                    clearInterval(slideTimer);
+                    slideTimer = window.setInterval(slide, settings.time);
+                    var $this = $(this);
+
+                    var href = $this.attr('data-slide-to');
+
+                    var $target = mySlider.find(".carousel").find('[nr-slide="' + href + '"]');
+
+                    if ($target.length) {
+                        e.preventDefault();
+
+                        $this.siblings('li').removeClass('active');
+
+                        $this.addClass('active');
+
+                        $target.siblings('.item').removeClass('active');
+                        $target.addClass('active').fadeIn('slow');
+                    }
+                }
+            });
+        });
+
+
+
         $(document).ready(function() {
             index = 0;
 
@@ -96,34 +127,7 @@
                 mySlider.find(".item.active").show();
             }
 
-            if (settings.dots == true) {
-                mySlider.find('.carousel-tab').each(function() {
-                    var $a = $(this).find('li');
-                    $a.on('click', function(e) {
-
-                        mySlider.find('.carousel .item.active').hide();
-                        clearInterval(slideTimer);
-                        slideTimer = window.setInterval(slide, settings.time);
-                        var $this = $(this);
-
-                        var href = $this.attr('data-slide-to');
-
-                        var $target = mySlider.find(".carousel").find('[nr-slide="' + href + '"]');
-
-                        if ($target.length) {
-                            e.preventDefault();
-
-                            $this.siblings('li').removeClass('active');
-
-                            $this.addClass('active');
-
-                            $target.siblings('.item').removeClass('active');
-                            $target.addClass('active').fadeIn('slow');
-
-                        }
-                    });
-                });
-            } else {
+            if (settings.dots != true) {
                 mySlider.find(".carousel-tab").hide();
             }
 
