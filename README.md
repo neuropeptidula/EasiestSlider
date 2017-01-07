@@ -43,7 +43,7 @@ How to add slider to your page?
       });
       ```
       
-5. Now you have simply slider with autoplay, time 6000 ms, dots and prev/next navigation, but you could customize some options adding true or false to code like here:
+5. Now you have simple slider with autoplay, time 6000 ms, dots and prev/next navigation, but you could customize some options adding true or false to code like here:
 ```
       $(document).ready(function() {
         $("#your-slider").makeSlider({
