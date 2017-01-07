@@ -30,11 +30,11 @@ How to add slider to your page?
 </div>
 ```
 
-3. Also, you could customise your slider in style.css, ex. height of slider, color and family of font and background of every slides.
+3. Also, you could customize your slider in style.css, ex. height of slider, color and family of font and background of every slides.
    I`ve added comments in CSS file to inform what could you customize safely.
 
-4. Finally, you could strat your slider function in your JavaScript file or just adding this lines to EasiestSlider.js
-   Don`t forget insert it inside $(document).ready(function(...)}; and you have to write time necessary to make slide show. Here is example:
+4. Finally, you could start your slider function in your JavaScript file or just adding this lines to EasiestSlider.js.
+   Don`t forget insert it inside $(document).ready(function(...)}; and write in function time necessary to make slide show. Here is example:
    ```
       $(document).ready(function() {
         $("#your-slider").makeSlider({
