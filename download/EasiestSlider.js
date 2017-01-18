@@ -1,3 +1,10 @@
+/*
+Version: 1.2.0
+Author: Katarzyna Barnaś
+Website: http://kacha.com.pl/
+Docs: https://github.com/neuropeptidula/EasiestSlider
+Repo: https://github.com/neuropeptidula/EasiestSlider/tree/master/download
+ */
 (function($) {
     $.fn.makeSlider = function(options) {
 
